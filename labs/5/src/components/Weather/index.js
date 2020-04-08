@@ -1,26 +1,5 @@
 import React from "react";
-import {View, Text, StyleSheet} from "react-native";
-
-const styles = StyleSheet.create({
-  card: {
-    justifyContent: "center",
-    backgroundColor: "#add8e6",
-    alignItems:"center",
-    textAlign: "center",
-    width: "60%",
-    padding:"1.5em",
-    borderWidth: 4,
-    borderColor: "grey",
-    borderRadius: 3,
-    marginLeft: "auto",
-    marginRight: "auto"
-  },
-  heading: {
-    fontSize: 20,
-    fontWeight: "bold"
-  }
-
-})
+import './weather.css'
 
 class Weather extends React.Component {
 
@@ -36,14 +15,13 @@ class Weather extends React.Component {
   componentDidMount() {
 
     fetch("https://api.weather.gov/gridpoints/MLB/25,69/forecast")
-    .then(res => res.json())
-    .then((result) => {
-      let periods = result.properties.periods;
-     
-      this.setState({
-        periods: periods
-      });
-      
+      .then(res => res.json())
+      .then((result) => {
+        console.log(result)
+        let periods = []
+        this.setState({
+          periods: periods
+        });
     })
     .catch((error) => {console.log(error)} );
 
@@ -51,18 +29,17 @@ class Weather extends React.Component {
 
   render() {
     return(
-      <View>
-        {
-            this.state.periods.map((value, index) => {
-                return <View style={styles.card} key={index}>
-                    <Text style={styles.heading}>{value.name}</Text>
-                    <Text style={styles.heading}>{value.temperature} {value.temperatureUnit}</Text>
-                    <Text>{value.detailedForecast}</Text>
-                    </View>;
-            })
-        
+      <>
+        { 
+          this.state.periods.map((value, index) => {
+            return <div className="card" key={index}>
+              <h2>{value.name}</h2>
+              <p>{value.temperature} {value.temperatureUnit}</p>
+              <p>{value.detailedForecast}</p>
+            </div>;
+          })
         }
-      </View>
+      </>
     );
   }
 
