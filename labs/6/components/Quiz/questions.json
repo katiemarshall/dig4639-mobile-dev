@@ -1,0 +1,107 @@
+[
+    {
+      "question": "What are UCF's official colors?",
+      "possibleAnswers":
+      [
+        {"text":"Yellow and Green",
+        "correct":false },
+        {"text": "Gold and Black",
+          "correct":true
+        },
+        {"text": "Orange and Blue",
+          "correct":false
+        },
+        {"text": "Green and Orange",
+          "correct":false
+        }
+      ]
+    },
+    {
+      "question": "What's the name of UCF's mascot?",
+      "possibleAnswers":
+      [
+        {
+          "text": "Pegasus",
+          "correct":false
+        },
+        {
+          "text": "Night Man",
+          "correct": false
+        },
+        {
+          "text": "Knightro",
+          "correct": true
+        },
+        {
+          "text": "John",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these is NOT a UCF tradition?",
+      "possibleAnswers":
+      [
+        {
+          "text": "Spirit Splash",
+          "correct":false
+        },
+        {
+          "text": "Universal Knights",
+          "correct": false
+        },
+        {
+          "text": "So You Think You're a Knight",
+          "correct": true
+        },
+        {
+          "text": "Comedy Knight",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which company sponsores the arena on main campus?",
+      "possibleAnswers":
+      [
+        {
+          "text": "Addition Financial",
+          "correct":true
+        },
+        {
+          "text": "CFE Credit Union",
+          "correct": true
+        },
+        {
+          "text": "Memory Bank",
+          "correct": false
+        },
+        {
+          "text": "Gemini Investments",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How many students go to UCF?",
+      "possibleAnswers":
+      [
+        {
+          "text": "58,000 - 60,000",
+          "correct":false
+        },
+        {
+          "text": "45,000 - 47,000",
+          "correct": false
+        },
+        {
+          "text": "72,000 - 74,000",
+          "correct": false
+        },
+        {
+          "text": "68,000 - 70,000",
+          "correct": true
+        }
+      ]
+    }
+  ]
