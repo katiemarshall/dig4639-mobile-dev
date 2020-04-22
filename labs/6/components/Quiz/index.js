@@ -45,7 +45,7 @@ render () {
     <View>
       {(this.state.currentState === TITLE_STATE) ?
         <View>
-          <Text style={styles.text}> State Flowers Test </Text>
+          <Text style={styles.text}> UCF Knowledge Test </Text>
           <Button
           style={styles.button}
           title = "Start"
